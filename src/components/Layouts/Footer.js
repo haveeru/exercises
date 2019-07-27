@@ -1,11 +1,22 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import {Paper, Tabs} from '@material-ui/core';
+import Tab from '@material-ui/core/Tab';
 
 class Footer extends Component {
     render() {
         return (
-            <Fragment>
-                <h1>Footer</h1>
-            </Fragment>
+            <Paper>
+                <Tabs
+                    value={0}
+                    indicatorColor="primary"
+                    textColor="primary"
+                    centered
+                >
+                    <Tab label="Item One" />
+                    <Tab label="Item Two" />
+                    <Tab label="Item Three" />
+                </Tabs>
+            </Paper>
         );
     }
 }

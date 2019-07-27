@@ -1,11 +1,16 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import {AppBar, Toolbar, Typography} from '@material-ui/core';
 
 class Header extends Component {
     render() {
         return (
-            <Fragment>
-                <h1>Header</h1>
-            </Fragment>
+                <AppBar position="static">
+                    <Toolbar>
+                        <Typography variant="headline" color="inherit">
+                            Exercise Database
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
         );
     }
 }
